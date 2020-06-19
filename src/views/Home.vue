@@ -111,13 +111,11 @@
 
             /** 修改任务状态 */
             edtorTaskState(data) {
-                console.log(data);
                 data.item.isComplete = !data.item.isComplete;
             },
 
             /** 删除一项任务 */
             delTask(data) {
-                console.log(data);
                 var index = this.list.indexOf(data.item);
                 this.list.splice(index, 1)
             },
